@@ -3,7 +3,7 @@ import numpy as np
 import MetaTrader5 as mt5
 
 class ForexTradingEnv(gym.Env):
-    def __init__(self, symbol="EURUSD")
+    def __init__(self, symbol="EURUSD"):
         super(ForexTradingEnv, self).__init__()
         self.symbol = symbol
         self.action_space = gym.spaces.Discrete(3) # 0 = buy, 1 = sell, 2 = hold 
@@ -45,4 +45,4 @@ class ForexTradingEnv(gym.Env):
     def render(self):
         # render the environment
         pass
-    
+
