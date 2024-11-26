@@ -12,15 +12,15 @@ This project is designed to create an AI-based Forex trading system using Deep R
 ├── /data
 │   └── /raw                    # ข้อมูลดิบจาก MT5 (ราคาคู่เงิน)
 │
-├── /env                        # Environment สำหรับ DRL เชื่อมต่อ MT5
+├── /env_drl                    # Environment สำหรับ DRL เชื่อมต่อ MT5
 │   └── mt5_env.py              # คลาสที่เชื่อมต่อกับ MT5
 │
-├── /models                     # โมเดลที่ฝึกแล้ว
+├── /models_drl                 # โมเดลที่ฝึกแล้ว
 │   └── /dqn                    # โมเดล DQN
 │
-├── /scripts                    # สคริปต์หลักสำหรับการฝึกและทดสอบโมเดล
-│   ├── /train_model.py          # ฝึกโมเดล DRL
-│   └── /trade.py                # ใช้โมเดลในการเทรดจริง
+├── /scripts_app                # สคริปต์หลักสำหรับการฝึกและทดสอบโมเดล
+│   ├── /train_model.py         # ฝึกโมเดล DRL
+│   └── /trade.py               # ใช้โมเดลในการเทรดจริง
 │
 ├── /config                     # คอนฟิกูเรชันพื้นฐาน
 │   └── settings.py             # ค่าคอนฟิกูเรชัน MT5, AI
